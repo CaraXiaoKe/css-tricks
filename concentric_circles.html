@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <title>同心圆技巧</title>
+    <style>
+        html,body{
+          width:100%;
+          height:100%;
+        }
+        body {
+          position: relative;
+        }
+        .center {
+            position: absolute;
+            left:0;
+            right:0;
+            top:0;
+            bottom: 0;
+            margin:auto;
+        }
+        /* 同心圆代码 只需要border-radius值大于等于容器宽度（padding+border+content）一半即可 150 >= (200+50*2)/2 */
+        .circle-wrap {
+            border: solid 50px #8e5800;
+            background-color: #fefb00;
+            width: 200px;
+            height: 200px;
+            border-radius: 150px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="circle-wrap center">
+
+    </div>
+  </body>
+</html>
